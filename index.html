@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechNews - Notícias de Tecnologia</title>
+    <!-- ===== CSS CORRIGIDO ===== -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -18,11 +20,11 @@
                         </td>
                         <td align="right">
                             <font color="white" size="4">
-                                <a href="#" style="color: #00d4ff; text-decoration: none;">Início</a> &nbsp;|&nbsp;
-                                <a href="#" style="color: white; text-decoration: none;">Hardware</a> &nbsp;|&nbsp;
-                                <a href="#" style="color: white; text-decoration: none;">Mobile</a> &nbsp;|&nbsp;
-                                <a href="#" style="color: white; text-decoration: none;">Games</a> &nbsp;|&nbsp;
-                                <a href="#" style="color: white; text-decoration: none;">IA</a>
+                                <a href="#" class="menu-link" style="color: #00d4ff; text-decoration: none;">Início</a> &nbsp;|&nbsp;
+                                <a href="#" class="menu-link" style="color: white; text-decoration: none;">Hardware</a> &nbsp;|&nbsp;
+                                <a href="#" class="menu-link" style="color: white; text-decoration: none;">Mobile</a> &nbsp;|&nbsp;
+                                <a href="#" class="menu-link" style="color: white; text-decoration: none;">Games</a> &nbsp;|&nbsp;
+                                <a href="#" class="menu-link" style="color: white; text-decoration: none;">IA</a>
                             </font>
                         </td>
                     </tr>
@@ -48,7 +50,8 @@
                                         <font color="#cccccc" size="4">
                                             Descubra como a IA está revolucionando o mundo da tecnologia e transformando a maneira como vivemos, trabalhamos e nos comunicamos.
                                         </font><br><br>
-                                        <a href="#" style="background: #00d4ff; color: #1a1a2e; padding: 12px 30px; text-decoration: none; border-radius: 30px; font-weight: bold;">
+                                        <!-- ===== BOTÃO COM ID CORRIGIDO ===== -->
+                                        <a href="#" id="botaoLeiaMais" style="background: #00d4ff; color: #1a1a2e; padding: 12px 30px; text-decoration: none; border-radius: 30px; font-weight: bold;">
                                             📖 Leia mais
                                         </a>
                                     </td>
@@ -248,8 +251,8 @@
                         <td colspan="3" bgcolor="#1a1a2e" style="border-radius: 10px; padding: 40px; text-align: center;">
                             <font color="white" size="6"><b>📬 Receba as últimas notícias</b></font><br><br>
                             <font color="#cccccc" size="4">Cadastre-se e receba as principais notícias de tecnologia no seu e-mail!</font><br><br>
-                            <form>
-                                <input type="email" placeholder="Digite seu melhor e-mail" style="padding: 12px; width: 300px; border-radius: 30px; border: none; font-size: 16px;">
+                            <form id="formNewsletter">
+                                <input type="email" id="emailInput" placeholder="Digite seu melhor e-mail" style="padding: 12px; width: 300px; border-radius: 30px; border: none; font-size: 16px;">
                                 <input type="submit" value="📨 Inscrever-se" style="padding: 12px 30px; background: #00d4ff; border: none; border-radius: 30px; font-weight: bold; font-size: 16px; cursor: pointer;">
                             </form>
                         </td>
@@ -292,20 +295,8 @@
             </td>
         </tr>
     </table>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
 
-    const botaoLeiaMais = document.querySelector('a[href="#"]');
-
-    if (botaoLeiaMais) {
-        botaoLeiaMais.addEventListener("click", function(event) {
-            event.preventDefault();
-
-            alert("Em breve você poderá ler a notícia completa sobre Inteligência Artificial!");
-        });
-    }
-
-});
-</script>
+    <!-- ===== JAVASCRIPT CORRIGIDO ===== -->
+    <script src="javascript/script.js"></script>
 </body>
 </html>
