@@ -1,1 +1,1 @@
-# tecjnews-minha-pagina-na-web
+# tecnews-minha-pagina-na-web
