@@ -1,4 +1,26 @@
-/* ===== RESET E ESTILOS GERAIS ===== */
+/* ===== FORÇA OS ESTILOS NAS TABELAS ===== */
+table, td, tr {
+    transition: all 0.3s ease;
+}
+
+/* Força o fundo e bordas */
+td[bgcolor="white"] {
+    background: white !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+    padding: 20px !important;
+}
+
+td[bgcolor="white"]:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
+}
+
+/* Força o gradiente no cabeçalho */
+table[bgcolor="#1a1a2e"] {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460) !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+}/* ===== RESET E ESTILOS GERAIS ===== */
 * {
     margin: 0;
     padding: 0;
